@@ -1,0 +1,11 @@
+INSERT INTO main_app_author(name, img, bio)
+  VALUES
+    ('Christopher Paolini','https://www.paolini.net/wp-content/uploads/2022/02/CP-Author-Photo-Tor-Pick-192x245.jpg','Christopher Paolini is the author of the international bestsellers Eragon, Eldest, Brisingr, and Inheritance, as well as The Fork, the Witch, and the Worm. His debut science fiction novel, To Sleep in a Sea of Stars, is now available. He resides in Paradise Valley, Montana, USA.');
+
+INSERT INTO main_app_author(name, img, bio)
+  VALUES
+    ('Patrick Rothfuss','https://www.patrickrothfuss.com/images/page/photo.jpg','Patrick Rothfuss was born in Madison, Wisconsin to awesome parents who encouraged him to read and create through reading to him, gentle boosts of self-esteem, and deprivation of cable television.  During his formative years, he read extensively and wrote terrible short stories and poetry to teach himself what not to do. In March 2007, The Name of the Wind was published to great acclaim, winning the Quill Award and making the New York Times Bestseller list. He started a charity fundraiser called Worldbuilders and published a not-for-children children’s book called The Adventures of the Princess and Mr. Whiffle in July of 2010 through Subterranean Press, which was adorable, and seriously isn’t for children.');
+
+INSERT INTO main_app_author(name, img, bio)
+  VALUES
+    ('Brandon Sanderson','https://477612.smushcdn.com/1512865/wp-content/uploads/2019/11/BrandonGray-776x1024.jpg?lossy=1&strip=1&webp=1','Brandon Sanderson was born in December 1975 in Lincoln, Nebraska. The only author to make the short list for the David Gemmell Legend Award eight times in seven years, Brandon won that award in 2011 for The Way of Kings. He has hit the New York Times Best-Seller List fifteen times, most recently at #1 with Oathbringer, book three of The Stormlight Archive, which is also Audible’s most pre-ordered book of all time. DMG Entertainment optioned the rights to the Cosmere universe shared by his fantasy novels, and Fox acquired the Reckoners trilogy for Shawn Levy’s production company 21 Laps. Brandon’s books have been published in thirty-five languages.');

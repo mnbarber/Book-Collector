@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}Author{% endblock  %}
+
+{% block content %}
+
+<h1 class="title pt-5">Trending Authors</h1>
+<div class="gallery">
+  {% for author in authors %}
+  <a href="">
+    <div class="card">
+      <div class="card-image">
+        <figure class="image is-square">
+          <img src="{{author.img}}" alt="{{author.name}}" />
+        </figure>
+      </div>
+      <div class="card-header">
+        <p class="card-header-title">{{author.name}}</p>
+      </div>
+    </div>
+  </a>
+	{% empty %}
+  <article class="message">
+    <div class="message-header">
+      <p>No Authors Available</p>
+    </div>
+  </article>
+  {% endfor %}
+</div>
+{% endblock %}
