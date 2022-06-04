@@ -27,6 +27,51 @@
             </span>
         </a>
     </div>
+    <form class="mb-5" action="{% url 'book_create' author.pk %}" method="post">
+        {% csrf_token %}
+        <div class="field has-addons">
+            <div class="control">
+                <input
+                    class="input"
+                    type="text"
+                    name="title"
+                    placeholder="Title"
+                    required
+                />
+            </div>
+            <div class="control">
+                <input
+                    class="input"
+                    type="number"
+                    name="length"
+                    placeholder="Page Count"
+                    min="1"
+                    required
+                />
+            </div>
+            <div class="control">
+                <input class="button is-primary" type="submit" value="Add Book" />
+            </div>
+        </div>
+    </form>
+    <div class="detail__songs mb-5">
+        <h3 class="title is-3">Books</h3>
+    
+        {% for book in author.books.all %}
+        <div class="song">
+          <span>{{forloop.counter}}</span>
+          <span><b>{{book.title}}</b></span>
+          <span>{{book.length}}</span>
+        </div>
+            {% empty %}
+        <article class="message">
+          <div class="message-header">
+            <p>No Books Available</p>
+          </div>
+        </article>
+    
+        {% endfor %}
+      </div>
     <div class="detail__about">
         <h4 class="title is-4">About</h4>
         <p>{{author.bio}}</p>
